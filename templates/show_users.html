@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block link %}
+<link rel="stylesheet" href="/static/app.css">
+{% endblock %}
+
+{% block content %}
+
+<h1>Users</h1>
+
+<form action="/users/new">
+
+    {% for user in users %}
+    <li><a href="/users/{{user.id}}">{{user.first_name}} {{user.last_name}}</a></li>
+    {% endfor %}
+    </ul>
+
+    <button class="add_button">Add User</button>
+
+</form>
+
+{% endblock %}

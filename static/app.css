@@ -1,0 +1,25 @@
+img {
+    width: 15rem;
+}
+
+input {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+div {
+    display: inline-block;
+}
+
+li {
+    margin-top: .5rem;
+}
+
+button {
+    margin-top: 1rem;
+}
+

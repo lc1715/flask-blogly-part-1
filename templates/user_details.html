@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block link %}
+<link rel="stylesheet" href="/static/app.css">
+{% endblock %}
+
+
+{% block content %}
+
+<h1>User Detail Page</h1>
+
+<img src={{user.image_url}} alt="{{user.first_name}}">
+
+{{user.first_name}} {{user.last_name}}
+
+
+<form>
+    <button formaction="/user/{{user.id}}/edit" formmethod="GET">Edit</button>
+
+    <button formaction="/users/{{user.id}}/delete" formmethod="POST">Delete</button>
+</form>
+
+{% endblock %}
